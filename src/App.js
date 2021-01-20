@@ -6,7 +6,7 @@ import Content from "./components/Content/Content";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Sidebar />
       <Content />
     </div>
