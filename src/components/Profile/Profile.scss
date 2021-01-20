@@ -1,0 +1,55 @@
+.profile {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+
+  &__avatar {
+    flex: 1;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__user-info {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 15px;
+  }
+
+  &__name {
+    margin: 0;
+    color: #f0f9ff;
+  }
+
+  &__status {
+    margin: 0;
+    color: #2f474f;
+  }
+
+  &__button {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    height: 24px;
+    width: 24px;
+    max-width: 24px;
+  }
+
+  &__button-icon {
+    fill: #26414a;
+    height: 24px;
+    width: 24px;
+
+    &:hover {
+      fill: #35525b;
+    }
+
+    &:active {
+      fill: #304b54;
+    }
+  }
+}
