@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   padding: 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #26414a, rgba(0, 0, 0, 0)) 20;
+  border-top: none;
 
   &__avatar {
     flex: 1;
@@ -21,11 +25,13 @@
   &__name {
     margin: 0;
     color: #f0f9ff;
+    font-size: 20px;
   }
 
   &__status {
-    margin: 0;
-    color: #2f474f;
+    margin: 8px 0 0 0;
+    color: #26414a;
+    font-size: 16px;
   }
 
   &__button {
@@ -37,6 +43,7 @@
     height: 24px;
     width: 24px;
     max-width: 24px;
+    cursor: pointer;
   }
 
   &__button-icon {

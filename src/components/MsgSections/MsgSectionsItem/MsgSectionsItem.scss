@@ -1,0 +1,29 @@
+.msg-sections-item {
+  margin: 15px 0 0 0;
+
+
+  &__button {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+
+    &:hover > * {
+      color: #90a4ae;
+      fill: #35525b;
+    }
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+    fill: #26414a;
+  }
+
+  &__title {
+    margin: 0 0 0 10px;
+    color: #6a7c86;
+    font-size: 18px;
+  }
+}
