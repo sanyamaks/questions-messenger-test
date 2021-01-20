@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 30px 15px 30px;
+  height: 130px;
+  box-sizing: border-box;
+
+  &__title {
+    margin: 0;
+    color: #545454;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  &__select-container {
+    margin: 10px 0 0 0;
+    position: relative;
+    height: 24px;
+    width: 150px;
+  }
+
+  &__select {
+    height: 100%;
+    width: 100%;
+    color: #c6c6c6;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+
+  &__select-option {
+
+  }
+
+  &__select-icon {
+    fill: #c6c6c6;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 60%;
+    z-index: -1;
+    transform: translate(0, -50%);
+  }
+}
