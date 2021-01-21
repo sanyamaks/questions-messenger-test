@@ -2,6 +2,9 @@
   background-color: #dae8f3;
   padding: 15px 30px 15px 30px;
   box-sizing: border-box;
+  overflow-y: scroll;
+  max-height: 100%;
+  flex: 1 1 auto;
 
   &__messages-item:not(:first-child) {
     margin: 15px 0 0 0;

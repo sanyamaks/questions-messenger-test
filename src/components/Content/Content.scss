@@ -1,4 +1,8 @@
 .content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   background-color: #dae8f3;
 }

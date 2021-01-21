@@ -8,6 +8,13 @@ const Messages = () => {
       <MessagesItem className="messages__messages-item"/>
       <MessagesItem className="messages__messages-item"/>
       <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
+      <MessagesItem className="messages__messages-item"/>
     </section>
   );
 };
