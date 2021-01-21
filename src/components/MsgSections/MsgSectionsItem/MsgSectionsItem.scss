@@ -1,17 +1,27 @@
 .msg-sections-item {
-  margin: 15px 0 0 0;
 
 
   &__button {
+    width: 100%;
     display: flex;
     cursor: pointer;
     background: none;
     border: none;
     outline: none;
+    border-radius: 2px;
+    padding: 5px 0;
 
     &:hover > * {
       color: #90a4ae;
       fill: #35525b;
+    }
+    &:active {
+      background-color: #117fa4;
+    }
+
+    &:active > * {
+      color: white;
+      fill: #87c7d0;
     }
   }
 
