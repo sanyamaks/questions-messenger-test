@@ -1,0 +1,61 @@
+.messages-item {
+  display: flex;
+  min-height: 120px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  box-sizing: border-box;
+
+  &__text {
+    margin: 0 0 0 20px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__question {
+    margin: 0;
+    color: #3d3d3d;
+  }
+
+  &__time {
+    margin: 0;
+    color: #c8c8c8;
+  }
+
+  &__button-container {
+    margin: 0 0 0 20px;
+    min-height: 100%;
+    max-width: 24px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+  }
+
+  &__button {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__button-icon {
+    height: 100%;
+    width: 100%;
+    fill: #c8c8c8;
+
+    &:hover {
+      fill: #a2a2a2;
+    }
+
+    &:active {
+      fill: #878787;
+    }
+  }
+}

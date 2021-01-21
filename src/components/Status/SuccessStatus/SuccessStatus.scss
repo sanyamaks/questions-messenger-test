@@ -1,0 +1,44 @@
+.success-status {
+  flex: 1;
+  height: 100%;
+  max-width: 80px;
+  min-width: 80px;
+
+
+  &__id {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    color: white;
+    background-color: #5cbd70;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 43px;
+    background-color: #5cbd70;
+    border-radius: 0 0 5px 5px;
+  }
+
+  &__icon {
+    height: 30px;
+    width: 30px;
+    fill: white;
+  }
+
+  &__closed {
+    margin: 1px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    color: white;
+    background-color: #5cbd70;
+    border-radius: 5px;
+  }
+}
