@@ -1,0 +1,61 @@
+.form {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  background-color: white;
+  flex: 0 0 auto;
+  padding: 15px 30px 15px 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #05222a, rgba(0, 0, 0, 0)) 10;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+  &__message {
+    margin: 0;
+    padding: 10px 10px;
+    height: 30px;
+    width: 50%;
+    color: #05222a;
+    background: none;
+    outline: none;
+    cursor: text;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0), #05222a, rgba(0, 0, 0, 0)) 20;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-sizing: border-box;
+
+    &::placeholder {
+      color: #587d8c;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__button-icon {
+    margin: 0 0 0 30px;
+    height: 24px;
+    width: 24px;
+    fill: #05222a;
+
+    &:hover {
+      fill: #506369;
+    }
+
+    &:active {
+      fill: #051921
+    }
+  }
+}
