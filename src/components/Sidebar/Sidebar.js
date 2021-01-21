@@ -8,6 +8,9 @@ const Sidebar = () => {
     <div className="sidebar">
       <Profile />
       <MsgSectionContainer />
+      <div className="sidebar__button-container">
+          <button className="sidebar__button">Add</button>
+      </div>
     </div>
   );
 };

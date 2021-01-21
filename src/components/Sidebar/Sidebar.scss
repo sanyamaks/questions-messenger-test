@@ -1,6 +1,41 @@
 .sidebar {
-    background-color: #05222a;
-    min-width: 400px;
-    max-width: 400px;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #05222a;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 100vh;
+  height: 100%;
+
+  &__button-container {
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-sizing: border-box;
+    flex: 0 0;
+  }
+
+  &__button {
+    color: white;
+    background: none;
+    border: 3px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 15px;
+    cursor: pointer;
+
+    &:hover {
+      color: #d0d0d0;
+      border: 3px solid #d0d0d0;
+    }
+
+    &:active {
+      color: white;
+      border: 3px solid white;
+    }
+  }
 }
