@@ -13,9 +13,9 @@ const MsgSections = () => {
             title={section.title}
             numberOfMessage={section.messages.length}
             key={section.id}
-            onClick={() =>
-              dispatch({ type: "SELECT_SECTION", payload: section.id })
-            }
+            onClick={() => {
+              dispatch({ type: "SELECT_SECTION", payload: section.id });
+            }}
             isActive={section.id === state.activeSection}
           />
         );

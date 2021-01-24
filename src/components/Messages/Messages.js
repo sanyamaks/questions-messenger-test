@@ -6,24 +6,26 @@ import { Context } from "../../store/Store";
 const Messages = () => {
   const [state] = useContext(Context);
 
+  const section = state.sections.find(
+    (section) => section.id === state.activeSection
+  );
+
   const renderConditionally = () => {
-    if (!state.activeSection) {
+    if (!Number.isInteger(state.activeSection) || !section) {
       return <p>Необходимо выбрать или добавить и выбрать раздел</p>;
     } else {
-      return state.sections
-        .find((section) => section.id === state.activeSection)
-        .messages.map((message) => {
-          return (
-            <MessagesItem
-              className="messages__messages-item"
-              title={message.title}
-              time={message.time}
-              key={message.id}
-              id={message.id}
-              isSuccess={message?.isSuccess}
-            />
-          );
-        });
+      return section.messages.map((message) => {
+        return (
+          <MessagesItem
+            className="messages__messages-item"
+            title={message.title}
+            time={message.time}
+            key={message.id}
+            id={message.id}
+            isSuccess={message?.isSuccess}
+          />
+        );
+      });
     }
   };
 

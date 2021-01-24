@@ -10,12 +10,19 @@ const Form = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!state.activeSection || inputRef.current.value.trim() === "") {
-      return null;
-    }
+
     const section = state.sections.find(
       (section) => section.id === state.activeSection
     );
+
+    if (
+      !Number.isInteger(state.activeSection) ||
+      !section ||
+      inputRef.current.value.trim() === ""
+    ) {
+      return null;
+    }
+
     dispatch({
       type: "ADD_MESSAGE",
       payload: {
