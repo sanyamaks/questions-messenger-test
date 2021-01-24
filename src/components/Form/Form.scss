@@ -14,7 +14,7 @@
 
   &__message {
     margin: 0;
-    padding: 10px 10px;
+    padding: 0 10px;
     height: 30px;
     width: 50%;
     color: #05222a;
@@ -30,6 +30,9 @@
     box-sizing: border-box;
     font-size: 16px;
     font-weight: 400;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 
     &::placeholder {
       color: #587d8c;

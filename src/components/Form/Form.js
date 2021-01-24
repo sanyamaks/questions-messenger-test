@@ -38,7 +38,7 @@ const Form = () => {
 
   return (
     <form className="form" onSubmit={handleSubmit} ref={formRef}>
-      <input
+      <textarea
         type="text"
         className="form__message"
         ref={inputRef}
