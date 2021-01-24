@@ -1,10 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Messages.scss";
 import MessagesItem from "./MessagesItem/MessagesItem";
 import { Context } from "../../store/Store";
+import { getData, removeData, setData } from "../../utils/localStorage";
 
 const Messages = () => {
   const [state] = useContext(Context);
+
+  useEffect(() => {
+    if (!!getData()) {
+      removeData();
+      setData(state);
+    }
+  }, [state]);
 
   const section = state.sections.find(
     (section) => section.id === state.activeSection
@@ -19,7 +27,7 @@ const Messages = () => {
           <MessagesItem
             className="messages__messages-item"
             title={message.title}
-            time={message.time}
+            time={new Date(message.time)}
             key={message.id}
             id={message.id}
             isSuccess={message?.isSuccess}

@@ -1,10 +1,27 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./MsgSections.scss";
 import MsgSectionsItem from "./MsgSectionsItem/MsgSectionsItem";
 import { Context } from "../../store/Store";
+import { getData, removeData, setData } from "../../utils/localStorage";
 
 const MsgSections = () => {
   const [state, dispatch] = useContext(Context);
+
+  useEffect(() => {
+    if (!getData()) {
+      setData(state);
+    } else {
+      dispatch({ type: "SET_STORE", payload: getData() });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!!getData()) {
+      removeData();
+      setData(state);
+    }
+  }, [state]);
+
   return (
     <ul className="msg-sections">
       {state.sections.map((section) => {

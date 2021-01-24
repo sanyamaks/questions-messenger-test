@@ -1,5 +1,9 @@
 const Reducer = (state, action) => {
   switch (action.type) {
+    case "SET_STORE":
+      return {
+        ...action.payload,
+      };
     case "SELECT_SECTION":
       return {
         ...state,

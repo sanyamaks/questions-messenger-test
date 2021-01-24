@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import "./Sidebar.scss";
 import Profile from "../Profile/Profile";
 import MsgSectionContainer from "../MsgSectionContainer/MsgSectionContainer";
