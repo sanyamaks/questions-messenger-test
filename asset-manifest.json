@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/questions-messenger-test/static/css/main.ba9bc6a9.chunk.css",
-    "main.js": "/questions-messenger-test/static/js/main.01a33d47.chunk.js",
-    "main.js.map": "/questions-messenger-test/static/js/main.01a33d47.chunk.js.map",
+    "main.css": "/questions-messenger-test/static/css/main.520c75c8.chunk.css",
+    "main.js": "/questions-messenger-test/static/js/main.754a2df6.chunk.js",
+    "main.js.map": "/questions-messenger-test/static/js/main.754a2df6.chunk.js.map",
     "runtime-main.js": "/questions-messenger-test/static/js/runtime-main.57c73267.js",
     "runtime-main.js.map": "/questions-messenger-test/static/js/runtime-main.57c73267.js.map",
     "static/js/2.a2f91d9a.chunk.js": "/questions-messenger-test/static/js/2.a2f91d9a.chunk.js",
     "static/js/2.a2f91d9a.chunk.js.map": "/questions-messenger-test/static/js/2.a2f91d9a.chunk.js.map",
     "index.html": "/questions-messenger-test/index.html",
-    "static/css/main.ba9bc6a9.chunk.css.map": "/questions-messenger-test/static/css/main.ba9bc6a9.chunk.css.map",
+    "static/css/main.520c75c8.chunk.css.map": "/questions-messenger-test/static/css/main.520c75c8.chunk.css.map",
     "static/js/2.a2f91d9a.chunk.js.LICENSE.txt": "/questions-messenger-test/static/js/2.a2f91d9a.chunk.js.LICENSE.txt",
     "static/media/icon-add.41740a05.svg": "/questions-messenger-test/static/media/icon-add.41740a05.svg",
     "static/media/icon-add2.04c0f6c9.svg": "/questions-messenger-test/static/media/icon-add2.04c0f6c9.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.57c73267.js",
     "static/js/2.a2f91d9a.chunk.js",
-    "static/css/main.ba9bc6a9.chunk.css",
-    "static/js/main.01a33d47.chunk.js"
+    "static/css/main.520c75c8.chunk.css",
+    "static/js/main.754a2df6.chunk.js"
   ]
 }
