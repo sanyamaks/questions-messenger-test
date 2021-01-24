@@ -13,12 +13,13 @@ const initialState = {
                 {
                     id: 1,
                     title: 'Default question message 1',
-                    time: 'time1',
+                    time: new Date(2021, 0, 22),
+                    isSuccess: true,
                 },
                 {
                     id: 2,
                     title: 'Default question message 2',
-                    time: 'time2',
+                    time: new Date(2021, 0, 21),
                 }
             ]
         },
@@ -30,12 +31,14 @@ const initialState = {
                 {
                     id: 1,
                     title: 'Default question message 11',
-                    time: 'time',
+                    time: new Date(2021, 0, 20),
+                    isSuccess: false,
                 },
                 {
                     id: 2,
                     title: 'Default question message 22',
-                    time: 'time',
+                    time: new Date(2021, 0, 19),
+                    isSuccess: true,
                 }
             ]
         }

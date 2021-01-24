@@ -6,16 +6,48 @@ import SuccessStatus from "../../Status/SuccessStatus/SuccessStatus";
 import ExecutionStatus from "../../Status/ExecutionStatus/ExecutionStatus";
 
 const MessagesItem = (props) => {
-  const { className } = props;
+  const { className, title, time, id, isSuccess } = props;
+
+  const renderConditionally = () => {
+    if (!isSuccess) {
+      return (
+        <ExecutionStatus
+          time={Math.floor((new Date() - time) / 1000 / 60 / 60)}
+          id={id}
+        />
+      );
+    } else {
+      return <SuccessStatus id={id} />;
+    }
+  };
+
+  const getMonth = (pos) => {
+    return [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ][pos];
+  };
   return (
     <article className={cn("messages-item", className)}>
-      {/*<ExecutionStatus />*/}
-      <SuccessStatus />
+      {renderConditionally()}
+
       <div className="messages-item__text">
-        <p className="messages-item__question">
-          Hello, what is the delivery time?
+        <p className="messages-item__question">{title}</p>
+        <p className="messages-item__time">
+          Guest {time.getHours() > 12 ? time.getHours() - 12 : time.getHours()}:
+          {time.getMinutes()} {time.getHours() > 12 ? "pm" : "am"} -{" "}
+          {time.getDate()} {getMonth(time.getMonth())}
         </p>
-        <p className="messages-item__time">Guest 4.20 am</p>
       </div>
       <div className="messages-item__button-container">
         <button className="messages-item__button">
