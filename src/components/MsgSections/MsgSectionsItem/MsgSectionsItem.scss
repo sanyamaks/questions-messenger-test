@@ -15,14 +15,18 @@
       color: #90a4ae;
       fill: #35525b;
     }
-    &:active {
-      background-color: #117fa4;
-    }
+  }
 
-    &:active > * {
-      color: white;
-      fill: #87c7d0;
-    }
+  &_active {
+    background-color: #117fa4;
+  }
+
+  &_active &__icon {
+    fill: #87c7d0;
+  }
+
+  &_active &__title {
+    color: white;
   }
 
   &__icon {
