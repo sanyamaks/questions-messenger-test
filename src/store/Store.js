@@ -3,18 +3,23 @@ import Reducer from "./Reducer";
 
 const initialState = {
     activeSection: null,
-    currentId: 10,
+    currentId: 2,
     sections: [
         {
-            id: 4,
-            title: 'default section',
-            currentId: 15,
+            id: 0,
+            title: 'initial section 1',
+            currentId: 3,
             messages: [
                 {
-                    id: 1,
+                    id: 0,
                     title: 'Default question message 1',
                     time: new Date(2021, 0, 22),
                     isSuccess: true,
+                },
+                {
+                    id: 1,
+                    title: 'Default question message 2',
+                    time: new Date(2021, 0, 21),
                 },
                 {
                     id: 2,
@@ -24,18 +29,18 @@ const initialState = {
             ]
         },
         {
-            id: 5,
-            title: 'default  2',
-            currentId: 18,
+            id: 1,
+            title: 'initial section 2',
+            currentId: 2,
             messages: [
                 {
-                    id: 1,
+                    id: 0,
                     title: 'Default question message 11',
                     time: new Date(2021, 0, 20),
                     isSuccess: false,
                 },
                 {
-                    id: 2,
+                    id: 1,
                     title: 'Default question message 22',
                     time: new Date(2021, 0, 19),
                     isSuccess: true,

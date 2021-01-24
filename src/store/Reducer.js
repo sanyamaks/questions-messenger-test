@@ -5,6 +5,16 @@ const Reducer = (state, action) => {
         ...state,
         activeSection: action.payload,
       };
+    case "ADD_SECTION":
+      return {
+        ...state,
+        sections: [...state.sections, action.payload],
+      };
+    case "UPDATE_SECTION_ID":
+      return {
+        ...state,
+        currentId: state.currentId + 1,
+      };
     case "ADD_MESSAGE":
       return {
         ...state,
@@ -12,19 +22,19 @@ const Reducer = (state, action) => {
           if (section.id === state.activeSection) {
             section.messages.push(action.payload);
           }
-          return section
+          return section;
         }),
       };
-    case 'UPDATE_MESSAGE_ID':
+    case "UPDATE_MESSAGE_ID":
       return {
         ...state,
         sections: state.sections.map((section) => {
           if (section.id === state.activeSection) {
             section.currentId += 1;
           }
-          return section
-        })
-      }
+          return section;
+        }),
+      };
     default:
       return state;
   }
